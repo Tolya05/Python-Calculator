@@ -1,0 +1,20 @@
+#imports my calculator functions
+from fourop import fourop
+from fourop import isfloat
+from perr import perr
+
+#introduces the user to the program
+print("Hello, and welcome all to Anatoliy's Amazing Calculator!\n")
+
+#defs the calculator you want to use
+print("1: 4 Operations")
+print("2: Percent Error")
+
+while True:
+	calc = int(input("Please enter your calculator number: "))
+	if calc == 1:
+		fourop()
+	elif calc == 2:
+		perr()
+	else:
+		print("Sorry that is not a vaild calculator :( please try again.")
